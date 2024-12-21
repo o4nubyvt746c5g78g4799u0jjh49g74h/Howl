@@ -1,0 +1,73 @@
+getgenv().Howl = {
+    ['Visuals'] = {
+        ['Field Of Views'] = {
+            ['Aimbot'] = {
+                ['Use'] = true,
+                ['Show'] = false,
+                ['Filled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Transparency'] = 1,
+                ['Radius'] = 50,
+                ['Position'] = "Mouse" --// Mouse, Center
+            },
+            ['Silent'] = {
+                ['Show'] = false,
+                ['Filled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Transparency'] = 1,
+                ['Radius'] = 90,
+                ['Position'] = "Mouse" --// Mouse, Center
+            }
+        }
+    },
+    ['Combat'] = {
+        ['Aimbot'] = {
+            ['Settings'] = {
+                ['Key'] = 'E',
+                ['Enabled'] = true,
+                ['Predict'] = {
+                    ['Enabled'] = true,
+                    ['Velocity X'] = 0.1992,
+                    ['Velocity Y'] = 0.20292,
+                },
+                ['Smooth'] = {
+                    ['Enabled'] = true,
+                    ['Multiply'] = 0.0395,
+                    ['Lerp'] = {
+                        ['Origin'] = 'Delta', --// Howl, Delta, Custom
+                        ['Customizable'] = {
+                            ['Alpha'] = 4,
+                            ['Control'] = 0.1
+                        }
+                    }
+                },
+                ['Bone'] = {
+                    ['Use'] = "Default",
+                    ['Select'] = "HumanoidRootPart",
+                    ['Offsets'] = {
+                        ['Enabled'] = true,
+                        ['X'] = 0.14,
+                        ['Y'] = 0.01
+                    }
+                }
+            }
+        },
+        ['Silent'] = {
+            ['Settings'] = {
+                ['Mode'] = 'Target',
+                ['Enabled'] = true,
+                ['Chance'] = 100,
+                ['Predict'] = {
+                    ['Velocity X'] = 0.12,
+                    ['Velocity Y'] = 0.12,
+                },
+                ['Bone'] = {
+                    ['Use'] = "Default",
+                    ['Select'] = "HumanoidRootPart"
+                }
+            }
+        }
+   }
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ed3f5d108ef7e8bc46a1fec65757e157.lua"))()
